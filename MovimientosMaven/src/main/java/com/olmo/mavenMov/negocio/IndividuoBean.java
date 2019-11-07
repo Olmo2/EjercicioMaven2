@@ -33,11 +33,10 @@ public class IndividuoBean {
 			@Column(name="dimensiones")
 			private String dimensiones;
 			
-			@OneToMany(mappedBy="individuo")
+			@OneToMany(mappedBy="individuo", cascade= CascadeType.ALL)
 			private List<MovimientoBean> movimientos = new ArrayList<MovimientoBean>();
 			
-			@ManyToOne(cascade= CascadeType.MERGE)
-			@JoinColumn(name="individuos")
+			@ManyToOne(cascade= CascadeType.ALL)
 			private EspecieBean especie;
 			
 			public void addMovimiento(MovimientoBean movimiento) {

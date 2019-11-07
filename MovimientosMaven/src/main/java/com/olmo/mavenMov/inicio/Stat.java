@@ -163,25 +163,16 @@ public class Stat {
 		 * **************************************************
 		 */
 		
+//		CreateMovimiento createMovimiento = new CreateMovimiento();
+//		createMovimiento.create(anidar);
+//		createMovimiento.create(atacar);
+//		createMovimiento.create(reproducir);
+//		createMovimiento.create(migrar);
 		
-		CreateEspecie createEspecie = new CreateEspecie();
-		createEspecie.create(insecto);
-		createEspecie.create(gato);
-		createEspecie.create(dodo);
+	
 		
-		CreateIndividuo createIndividuo = new CreateIndividuo();
-		createIndividuo.create(cerebro);
-		createIndividuo.create(soldado);
-		createIndividuo.create(felix);
-		createIndividuo.create(tom);
-		createIndividuo.create(silvestre);
-		
-		CreateMovimiento createMovimiento = new CreateMovimiento();
-		createMovimiento.create(anidar);
-		createMovimiento.create(atacar);
-		createMovimiento.create(reproducir);
-		createMovimiento.create(migrar);
-		
+	
+//		
 		CreateTorreta createTorreta = new CreateTorreta();
 		createTorreta.create(torretaP);
 		createTorreta.create(torretaSur);
@@ -194,7 +185,19 @@ public class Stat {
 		CreateBiologo createBiologo  = new CreateBiologo();
 		createBiologo.create(rico);
 		createBiologo.create(juan);
+//		
 		
+		CreateEspecie createEspecie = new CreateEspecie();
+		createEspecie.create(insecto);
+		createEspecie.create(gato);
+		createEspecie.create(dodo);
+		
+//		CreateIndividuo createIndividuo = new CreateIndividuo();
+//		createIndividuo.create(cerebro);
+//		createIndividuo.create(soldado);
+//		createIndividuo.create(felix);
+//		createIndividuo.create(tom);
+//		createIndividuo.create(silvestre);
 		
 		
 		

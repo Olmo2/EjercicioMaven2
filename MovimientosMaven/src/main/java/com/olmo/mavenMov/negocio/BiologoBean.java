@@ -27,7 +27,7 @@ public class BiologoBean {
 	@Column(name="fecha")
 	private String fecha;
 	
-	@Column(name="nombre")
+	@Column(name="provincia")
 	private String provincia;
 	
 	@Column(name="nombre")

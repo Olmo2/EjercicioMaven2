@@ -3,6 +3,7 @@ package com.olmo.mavenMov.negocio;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -34,7 +35,7 @@ public class EspecieBean {
 		@Column(name="caracteristicas")
 		private String caracteristicas;
 		
-		@OneToMany(mappedBy="especie")
+		@OneToMany(mappedBy="especie",cascade =CascadeType.ALL)
 		private List<IndividuoBean> individuos = new ArrayList<IndividuoBean>();
 		
 		public void addIndividuo(IndividuoBean individuo) {

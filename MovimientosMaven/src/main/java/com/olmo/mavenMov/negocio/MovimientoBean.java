@@ -36,7 +36,7 @@ public class MovimientoBean {
 		@Column(name="fecha")
 		private String fecha;
 		
-		@ManyToOne(cascade = CascadeType.MERGE)
+		@ManyToOne(cascade = CascadeType.ALL)
 		@JoinColumn(name="movimientos")
 		private IndividuoBean individuo;
 		
@@ -44,7 +44,7 @@ public class MovimientoBean {
 		@JoinColumn(name="torreta")
 		private TorretaBean torreta;
 		
-		@ManyToMany(mappedBy="movimientos",cascade = CascadeType.MERGE)
+		@ManyToMany(cascade = CascadeType.MERGE)
 		private List<InformeBean> informes = new ArrayList<InformeBean>();
 		
 		

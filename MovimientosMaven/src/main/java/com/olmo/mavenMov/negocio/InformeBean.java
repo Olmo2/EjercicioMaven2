@@ -27,7 +27,7 @@ public class InformeBean {
 	@Column(name="fecha")
 	private String fecha;
 	
-	@ManyToMany(cascade= CascadeType.MERGE)
+	@ManyToMany(mappedBy="informes",cascade= CascadeType.MERGE)
 	private List<MovimientoBean> movimientos = new ArrayList<MovimientoBean>();
 	
 	@ManyToMany(mappedBy="informes",cascade = CascadeType.MERGE)
