@@ -34,7 +34,7 @@ public class EspecieBean {
 		@Column(name="caracteristicas")
 		private String caracteristicas;
 		
-		@OneToMany(mappedBy="individuo")
+		@OneToMany(mappedBy="especie")
 		private List<IndividuoBean> individuos = new ArrayList<IndividuoBean>();
 		
 		public void addIndividuo(IndividuoBean individuo) {

@@ -37,10 +37,10 @@ public class IndividuoBean {
 			private List<MovimientoBean> movimientos = new ArrayList<MovimientoBean>();
 			
 			@ManyToOne(cascade= CascadeType.MERGE)
-			@JoinColumn(name="especie")
+			@JoinColumn(name="individuos")
 			private EspecieBean especie;
 			
-			public void addMovimientos(MovimientoBean movimiento) {
+			public void addMovimiento(MovimientoBean movimiento) {
 
 				if (!movimientos.contains(movimiento)) {
 

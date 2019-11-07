@@ -37,7 +37,7 @@ public class MovimientoBean {
 		private String fecha;
 		
 		@ManyToOne(cascade = CascadeType.MERGE)
-		@JoinColumn(name="individuo")
+		@JoinColumn(name="movimientos")
 		private IndividuoBean individuo;
 		
 		@ManyToOne(cascade=CascadeType.MERGE)

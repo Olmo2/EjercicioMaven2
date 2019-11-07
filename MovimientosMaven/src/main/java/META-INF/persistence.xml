@@ -6,7 +6,7 @@
 
 
 
-  <persistence-unit name="com.olmo.pruebasMaven.H2" transaction-type="RESOURCE_LOCAL">
+  <persistence-unit name="com.olmo.mavenMov.H2" transaction-type="RESOURCE_LOCAL">
     
     <!-- Framework proveedor del servicio de acceso a los datos -->
   	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
@@ -15,12 +15,12 @@
     <class>pruebasMaven.negocio.AlumnoBean</class>
 	<class>pruebasMaven.negocio.AsignaturaBean</class>
 	-->
-	<class>EjercicioMaven.negocio.CategoriaBean</class>
-    <class>EjercicioMaven.negocio.CocheBean</class>
-    <class>EjercicioMaven.negocio.ConcesionarioBean</class>
-    <class>EjercicioMaven.negocio.ReparacionBean</class>
-    <class>EjercicioMaven.negocio.TallerBean</class>
-    <class>EjercicioMaven.negocio.TrabajadorBean</class>
+	<class>com.olmo.mavenMov.negocio.BiologoBean</class>
+    <class>com.olmo.mavenMov.negocio.EspecieBean</class>
+    <class>com.olmo.mavenMov.negocio.IndividuoBean</class>
+    <class>com.olmo.mavenMov.negocio.MovimientoBean</class>
+    <class>com.olmo.mavenMov.negocio.TorretaBean</class>
+    <class>com.olmo.mavenMov.negocio.InformeBean</class>
 	
 	
     <properties>
